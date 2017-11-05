@@ -1,3 +1,55 @@
-body {
-  background-color: red;
+
+
+.home-body-wrapper {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  float: left;
+    display: inline-flex;
+    .home-container-50 {
+      width: 50vw;
+      height: 100vh;
+    }
 }
+
+  .home-contact-info-wrapper {
+    background-color: $blue;
+    color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .contact-logo {
+        text-align: center;
+        font-size: 2rem;
+      }
+      .contact-address {
+        display: flex;
+        flex-direction: column;
+        .contact-address-item {
+          height: calc(100% / 2);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .contact-media {
+        display: flex;
+        .contact-media-item {
+          width: calc(100% / 2);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+            i {
+              font-size: 2rem;
+            }
+        }
+      }
+      .contact-how {
+        border: 1px solid red;
+      }
+  }
+
+  .home-additional-info-wrapper {
+    background-color: $orange;
+  }

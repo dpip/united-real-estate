@@ -1,0 +1,17 @@
+.contact-grid {
+  width: 30vw;
+  height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .grid-container-4 {
+      width: 100%;
+      height: calc(100% / 4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}

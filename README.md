@@ -5,6 +5,7 @@ JQuery
 
 Preprocessors:
 SASS
+note: since SASS cascades, scss view files must be imported after the included modules and partials.
 
 Package Manager:
 Bower
