@@ -16,6 +16,7 @@
   .home-contact-info-wrapper {
     background-color: $blue;
     color: $white;
+    font-family: $playfair;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -42,11 +43,18 @@
           align-items: center;
             i {
               font-size: 2rem;
+              transition: all .2s;
+                cursor: $default;
+            }
+            i:hover {
+              color: $orange;
+              transition: all .2s;
+                cursor: $default;
             }
         }
       }
       .contact-how {
-        border: 1px solid red;
+        font-family: $lato;
       }
   }
 

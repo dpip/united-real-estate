@@ -1,8 +1,16 @@
 .button-how {
-  font-size: 2rem;
+  font-size: 1.5rem;
   border: 2px solid white;
-  border-radius: 4px;
-  padding: .6rem; }
+  border-radius: 1px;
+  padding: .6rem;
+  cursor: pointer;
+  transition: all .2s; }
+
+.button-how:hover {
+  transition: all .2s;
+  border: 1px solid #e44400;
+  border-radius: 5px;
+  color: #e44400; }
 
 .contact-grid {
   width: 30vw;
@@ -80,6 +88,7 @@ table {
 .home-contact-info-wrapper {
   background-color: #002a3d;
   color: white;
+  font-family: "playfair", "Georgia", Cambria, Times New Roman, Times, serif;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -102,9 +111,15 @@ table {
       justify-content: center;
       align-items: center; }
       .home-contact-info-wrapper .contact-media .contact-media-item i {
-        font-size: 2rem; }
+        font-size: 2rem;
+        transition: all .2s;
+        cursor: pointer; }
+      .home-contact-info-wrapper .contact-media .contact-media-item i:hover {
+        color: #e44400;
+        transition: all .2s;
+        cursor: pointer; }
   .home-contact-info-wrapper .contact-how {
-    border: 1px solid red; }
+    font-family: "Lato", sans-serif; }
 
 .home-additional-info-wrapper {
   background-color: #e44400; }
