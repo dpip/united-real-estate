@@ -2,18 +2,28 @@ $default: pointer;
 
 
 .button-how {
+  width: 12rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   font-size: 1.5rem;
-  border: 2px solid $white;
+  font-family: $karla;
+  color: $white;
+  text-align: center;
+  // border: 2px solid $white;
+  background-color: $blue;
   border-radius: 1px;
   padding: .6rem;
+  z-index: 180;
     cursor: $default;
     transition: all .2s;
-
 }
 
 .button-how:hover {
   transition: all .2s;
-  border: 1px solid $orange;
+  background-color: $green;
   border-radius: 5px;
-  color: $orange;
+  font-weight: bold;
 }

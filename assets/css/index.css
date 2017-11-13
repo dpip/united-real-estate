@@ -1,30 +1,59 @@
 .button-how {
+  width: 12rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   font-size: 1.5rem;
-  border: 2px solid white;
+  font-family: "Karla";
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 42, 61, 0.9);
   border-radius: 1px;
   padding: .6rem;
+  z-index: 180;
   cursor: pointer;
   transition: all .2s; }
 
 .button-how:hover {
   transition: all .2s;
-  border: 1px solid #e44400;
+  background-color: #496a59;
   border-radius: 5px;
-  color: #e44400; }
+  font-weight: bold; }
 
-.contact-grid {
-  width: 30vw;
-  height: 60vh;
+.bio-info-grid {
+  height: 15rem;
+  width: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .contact-grid .grid-container-4 {
+  .bio-info-grid .bio-info-grid-container {
     width: 100%;
     height: calc(100% / 4);
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "Karla";
+    color: white; }
+  .bio-info-grid .bio-info-social-links {
+    width: 75%;
+    display: inline-flex;
+    font-size: 2.5rem; }
+    .bio-info-grid .bio-info-social-links div {
+      width: calc(100% /2);
+      display: flex;
+      justify-content: center;
+      color: white;
+      transition: all .2s;
+      cursor: pointer; }
+    .bio-info-grid .bio-info-social-links div:hover {
+      transition: all .2s;
+      color: #496a59;
+      font-size: 2.6rem;
+      cursor: pointer; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -80,46 +109,66 @@ table {
   margin: 0;
   padding: 0;
   float: left;
+  position: relative;
+  background-image: url(../images/pexels-photo-259962.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-flex;
   display: inline-flex; }
-  .home-body-wrapper .home-container-50 {
-    width: 50vw;
-    height: 100vh; }
-
-.home-contact-info-wrapper {
-  background-color: #002a3d;
-  color: white;
-  font-family: "playfair", "Georgia", Cambria, Times New Roman, Times, serif;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .home-contact-info-wrapper .contact-logo {
-    text-align: center;
-    font-size: 2rem; }
-  .home-contact-info-wrapper .contact-address {
+  .home-body-wrapper .menu-header {
+    width: 100%;
+    height: 10vh;
+    background-color: #002132;
+    position: absolute; }
+  .home-body-wrapper .layer {
+    background-color: rgba(248, 247, 216, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .home-body-wrapper .body-wrapper-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgba(0, 42, 61, 0.9) 50%); }
+  .home-body-wrapper .container-50 {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 150; }
+  .home-body-wrapper .c-50-one {
     display: flex;
-    flex-direction: column; }
-    .home-contact-info-wrapper .contact-address .contact-address-item {
-      height: calc(100% / 2);
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-  .home-contact-info-wrapper .contact-media {
-    display: flex; }
-    .home-contact-info-wrapper .contact-media .contact-media-item {
-      width: calc(100% / 2);
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .home-contact-info-wrapper .contact-media .contact-media-item i {
-        font-size: 2rem;
-        transition: all .2s;
-        cursor: pointer; }
-      .home-contact-info-wrapper .contact-media .contact-media-item i:hover {
-        color: #e44400;
-        transition: all .2s;
-        cursor: pointer; }
-  .home-contact-info-wrapper .contact-how {
-    font-family: "Lato", sans-serif; }
-
-.home-additional-info-wrapper {
-  background-color: #e44400; }
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+  .home-body-wrapper .c-50-two {
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+  .home-body-wrapper .bio-info-grid-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+    .home-body-wrapper .bio-info-grid-wrapper .bio-info-image {
+      height: 15rem;
+      width: 15rem;
+      background-image: url(../images/United_Pic_1.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-radius: 10em; }
+  .home-body-wrapper .TRB-logo {
+    width: 30rem;
+    background-color: white;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }

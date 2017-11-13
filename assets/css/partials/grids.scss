@@ -1,17 +1,41 @@
-.contact-grid {
-  width: 30vw;
-  height: 60vh;
+.bio-info-grid {
+  height: 15rem;
+  width: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .grid-container-4 {
+    .bio-info-grid-container {
       width: 100%;
       height: calc(100% / 4);
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.5rem;
+        font-family: $karla;
+        color: white;
 
     }
+    .bio-info-social-links {
+      width: 75%;
+      display: inline-flex;
+      font-size: 2.5rem;
+        div {
+          width: calc(100% /2);
+          display: flex;
+          justify-content: center;
+          color: white;
+          transition: all .2s;
+          cursor: pointer;
+        }
+        div:hover {
+          transition: all .2s;
+          color: $green;
+          font-size: 2.6rem;
+          cursor: pointer;
+
+        }
+    }
+
 }
