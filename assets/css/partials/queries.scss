@@ -1,0 +1,58 @@
+@media only screen and (max-width: 880px) {
+    .home-body-wrapper {
+      flex-direction: column;
+    }
+    .body-wrapper-overlay {
+      display: none;
+    }
+    .c-50-one {
+      height: 20rem !important;
+      width: 100% !important;
+      background-color: $blue !important;
+      .TRB-wrap {
+        height: 100%;
+        flex-direction: row !important;
+        .TRB-logo {
+          // display: none !important;
+          width: 14vw !important;
+          height: 10vw !important;
+        }
+        .TRB-title {
+          margin-top: 0;
+          font-size: 5.5vw;
+        }
+        .RDC-wrap {
+          display: none !important;
+        }
+        .button-how {
+          display: none !important;
+        }
+      }
+    }
+    .c-50-two {
+      height: 80rem !important;
+      width: 100% !important;
+
+      .bio-info-grid-container {
+        color: $blue;
+      }
+      .bio-info-social-links {
+        div {
+          color: $blue;
+        }
+        div:hover {
+          color: $blue;
+        }
+      }
+      .bio-info-grid-wrapper {
+        box-sizing: border-box;
+        height: 95% !important;
+        padding-top: 5%;
+        font-weight: bold;
+      }
+      .bio-info-image {
+        height: 20em !important;
+        width: 13em !important;
+      }
+    }
+}

@@ -13,17 +13,22 @@
   border-radius: 1px;
   padding: .6rem;
   z-index: 180;
+  margin-top: -2rem;
   cursor: pointer;
   transition: all .2s; }
 
 .button-how:hover {
   transition: all .2s;
-  background-color: #496a59;
+  background-color: #ececec;
+  color: rgba(0, 42, 61, 0.9);
   border-radius: 5px;
   font-weight: bold; }
 
+.button-how-remove {
+  opacity: 0; }
+
 .bio-info-grid {
-  height: 15rem;
+  height: 31rem;
   width: 25rem;
   display: flex;
   flex-direction: column;
@@ -51,8 +56,8 @@
       cursor: pointer; }
     .bio-info-grid .bio-info-social-links div:hover {
       transition: all .2s;
-      color: #496a59;
-      font-size: 2.6rem;
+      color: #ececec;
+      font-size: 2.8rem;
       cursor: pointer; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -103,6 +108,48 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@media only screen and (max-width: 880px) {
+  .home-body-wrapper {
+    flex-direction: column; }
+
+  .body-wrapper-overlay {
+    display: none; }
+
+  .c-50-one {
+    height: 20rem !important;
+    width: 100% !important;
+    background-color: rgba(0, 42, 61, 0.9) !important; }
+    .c-50-one .TRB-wrap {
+      height: 100%;
+      flex-direction: row !important; }
+      .c-50-one .TRB-wrap .TRB-logo {
+        width: 14vw !important;
+        height: 10vw !important; }
+      .c-50-one .TRB-wrap .TRB-title {
+        margin-top: 0;
+        font-size: 5.5vw; }
+      .c-50-one .TRB-wrap .RDC-wrap {
+        display: none !important; }
+      .c-50-one .TRB-wrap .button-how {
+        display: none !important; }
+
+  .c-50-two {
+    height: 80rem !important;
+    width: 100% !important; }
+    .c-50-two .bio-info-grid-container {
+      color: rgba(0, 42, 61, 0.9); }
+    .c-50-two .bio-info-social-links div {
+      color: rgba(0, 42, 61, 0.9); }
+    .c-50-two .bio-info-social-links div:hover {
+      color: rgba(0, 42, 61, 0.9); }
+    .c-50-two .bio-info-grid-wrapper {
+      box-sizing: border-box;
+      height: 95% !important;
+      padding-top: 5%;
+      font-weight: bold; }
+    .c-50-two .bio-info-image {
+      height: 20em !important;
+      width: 13em !important; } }
 .home-body-wrapper {
   width: 100%;
   height: 100vh;
@@ -148,27 +195,108 @@ table {
   .home-body-wrapper .c-50-two {
     display: flex;
     justify-content: center;
+    align-items: center;
     align-content: center; }
   .home-body-wrapper .bio-info-grid-wrapper {
     width: 100%;
-    height: 100%;
+    height: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center; }
     .home-body-wrapper .bio-info-grid-wrapper .bio-info-image {
-      height: 15rem;
-      width: 15rem;
+      height: 25em;
+      width: 15em;
       background-image: url(../images/United_Pic_1.jpg);
       background-size: 100% 100%;
       background-repeat: no-repeat;
       border-radius: 10em; }
-  .home-body-wrapper .TRB-logo {
-    width: 30rem;
-    background-color: white;
-    height: 12rem;
+    .home-body-wrapper .bio-info-grid-wrapper .view-rentals {
+      font-weight: bolder; }
+  .home-body-wrapper .TRB-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 37rem; }
+    .home-body-wrapper .TRB-wrap .TRB-logo {
+      width: 22rem;
+      height: 17rem;
+      background-image: url(../images/Frame.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center; }
+
+.TRB-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: rgba(0, 42, 61, 0.9);
+  font-size: 2rem;
+  background-color: rgba(236, 236, 236, 0.6);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: -4rem; }
+
+.RDC-wrap {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: rgba(0, 42, 61, 0.9);
+  margin-top: -4rem; }
+  .RDC-wrap .rdc {
+    font-size: 1.5rem;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: underline; }
+  .RDC-wrap .fa {
+    text-decoration: none;
+    font-size: .8rem; }
+
+.panel {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(236, 236, 236, 0.6);
+  position: absolute;
+  z-index: 180;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 42, 61, 0.9);
+  font-family: "Lato", sans-serif;
+  font-size: 2vw;
+  transition: all .2s; }
+  .panel .panel-logo {
+    width: 22rem;
+    height: 17rem;
+    background-image: url(../images/Frame.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-content: center;
-    align-items: center; }
+    align-items: center;
+    transition: all .2s; }
+  .panel .panel-body-container {
+    padding-top: 20rem; }
+
+.panel-blts {
+  padding-top: .5rem;
+  font-weight: bold;
+  transition: all .2s; }
+
+.panel-logo-title {
+  display: flex;
+  position: relative;
+  z-index: 190; }

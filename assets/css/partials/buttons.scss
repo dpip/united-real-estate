@@ -12,18 +12,24 @@ $default: pointer;
   font-family: $karla;
   color: $white;
   text-align: center;
-  // border: 2px solid $white;
   background-color: $blue;
   border-radius: 1px;
   padding: .6rem;
   z-index: 180;
+  margin-top: -2rem;
+
     cursor: $default;
     transition: all .2s;
 }
 
 .button-how:hover {
   transition: all .2s;
-  background-color: $green;
+  background-color: $white-smoke;
+  color: $blue;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.button-how-remove {
+  opacity: 0;
 }

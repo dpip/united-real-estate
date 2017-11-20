@@ -1,5 +1,6 @@
+
 .bio-info-grid {
-  height: 15rem;
+  height: 31rem;
   width: 25rem;
     display: flex;
     flex-direction: column;
@@ -25,14 +26,14 @@
           width: calc(100% /2);
           display: flex;
           justify-content: center;
-          color: white;
+          color: $white;
           transition: all .2s;
           cursor: pointer;
         }
         div:hover {
           transition: all .2s;
-          color: $green;
-          font-size: 2.6rem;
+          color: $white-smoke;
+          font-size: 2.8rem;
           cursor: pointer;
 
         }
