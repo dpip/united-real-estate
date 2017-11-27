@@ -1,4 +1,4 @@
-The following directory is a freelance build for United Real Estate.
+The following directory owned by Triangle Rental Brokers.
 
 Libraries:
 JQuery
