@@ -210,6 +210,62 @@ body.safari .panel-body-container {
 .footer-two {
   left: 52.5vw; }
 
+@media only screen and (min-device-width: 370px) and (max-device-width: 667px) {
+  .firms-footer {
+    position: absolute;
+    display: block !important;
+    z-index: 190;
+    bottom: 92vh;
+    width: 50vw;
+    height: 4rem;
+    display: flex; }
+    .firms-footer .firm-item {
+      padding-left: .5rem;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      height: 100%;
+      color: rgba(0, 42, 61, 0.9);
+      font-family: "Karla";
+      font-size: 1rem; }
+    .firms-footer .firm-image img {
+      width: 1.5rem;
+      height: 1.5rem; }
+
+  .footer-one {
+    right: -15vw; }
+
+  .footer-two {
+    left: 52.5vw; } }
+@media only screen and (max-device-width: 320px) {
+  .firms-footer {
+    position: absolute;
+    display: block !important;
+    z-index: 190;
+    bottom: 92vh;
+    width: 50vw;
+    height: 4rem;
+    display: flex; }
+    .firms-footer .firm-item {
+      padding-left: .5rem;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      height: 100%;
+      color: rgba(0, 42, 61, 0.9);
+      font-family: "Karla";
+      font-size: 1rem; }
+    .firms-footer .firm-image img {
+      width: 1.5rem;
+      height: 1.5rem; }
+
+  .footer-one {
+    right: -15vw; }
+
+  .footer-two {
+    left: 52.5vw; } }
 .home-body-wrapper {
   width: 100%;
   height: 100vh;
