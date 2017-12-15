@@ -60,6 +60,10 @@
     .panel-body-container {
       display: none;
     }
+    .firms-footer {
+      display: none !important;
+    }
+
 }
 
 
@@ -67,5 +71,33 @@ body.safari {
   .panel-body-container {
     padding-top: 21rem;
     padding-left: 1em;
+  }
+}
+
+@media only screen
+and (min-device-width : 370px)
+and (max-device-width : 667px) {
+
+  .bio-info-grid .bio-info-grid-container {
+    font-size: 5.2vw;
+
+  }
+  .c-50-two .bio-info-social-links div {
+    font-size: 12vw;
+  }
+
+}
+
+@media only screen and (max-device-width: 320px){
+    body {
+      min-width: 100%;
+      height: 100%;
+  }
+  .bio-info-grid .bio-info-grid-container {
+    font-size: 5.8vw;
+
+  }
+  .c-50-two .bio-info-social-links div {
+    font-size: 12vw;
   }
 }

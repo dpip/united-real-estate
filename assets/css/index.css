@@ -159,10 +159,56 @@ a {
     opacity: 0; }
 
   .panel-body-container {
-    display: none; } }
+    display: none; }
+
+  .firms-footer {
+    display: none !important; } }
 body.safari .panel-body-container {
   padding-top: 21rem;
   padding-left: 1em; }
+
+@media only screen and (min-device-width: 370px) and (max-device-width: 667px) {
+  .bio-info-grid .bio-info-grid-container {
+    font-size: 5.2vw; }
+
+  .c-50-two .bio-info-social-links div {
+    font-size: 12vw; } }
+@media only screen and (max-device-width: 320px) {
+  body {
+    min-width: 100%;
+    height: 100%; }
+
+  .bio-info-grid .bio-info-grid-container {
+    font-size: 5.8vw; }
+
+  .c-50-two .bio-info-social-links div {
+    font-size: 12vw; } }
+.firms-footer {
+  position: absolute;
+  z-index: 190;
+  bottom: .5rem;
+  width: 50vw;
+  height: 4rem;
+  display: flex; }
+  .firms-footer .firm-item {
+    padding-left: .5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(0, 42, 61, 0.9);
+    font-family: "Karla";
+    font-size: 1rem; }
+  .firms-footer .firm-image img {
+    width: 3.5rem;
+    height: 3rem; }
+
+.footer-one {
+  left: .5rem; }
+
+.footer-two {
+  left: 50.5vw; }
 
 .home-body-wrapper {
   width: 100%;

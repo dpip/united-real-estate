@@ -1,0 +1,32 @@
+.firms-footer {
+  position: absolute;
+  z-index: 190;
+  bottom: .5rem;
+    width: 50vw;
+    height: 4rem;
+      display: flex;
+
+  .firm-item {
+    padding-left: .5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+      color: $blue;
+      font-family: $karla;
+      font-size: 1rem;
+  }
+  .firm-image {
+    img {
+      width: 3.5rem;
+      height: 3rem;
+    }
+  }
+}
+.footer-one {
+  left: .5rem;
+}
+.footer-two {
+  left: 50.5vw;
+}
