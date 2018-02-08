@@ -1,15 +1,13 @@
-
-
 // modules
-@import 'modules/colors';
-@import 'modules/fonts';
+@import "./modules/colors";
+@import "./modules/fonts";
 
 // partials
-@import 'partials/buttons';
-@import 'partials/grids';
-@import 'partials/reset';
-@import 'partials/queries';
-@import 'partials/firms';
+@import "./partials/buttons";
+@import "./partials/grids";
+@import "./partials/reset";
+@import "./partials/queries";
+@import "./partials/firms";
 
 // views
-@import 'home';
+@import "home";

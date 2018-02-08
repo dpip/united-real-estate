@@ -1,13 +1,15 @@
-$('.panel').hide();
+$.fn.scrollView = function() {
+  return this.each(function() {
+    $("html, body").animate(
+      {
+        scrollTop: $(this).offset().top
+      },
+      800
+    );
+  });
+};
 
-$('.button-how').on('click', function(){
-  $('.panel').toggle('panel');
-  $('.button-how').addClass('button-how-remove');
-  $('.RDC-wrap').addClass('button-how-remove');
-
+$(".button-how").click(function(event) {
+  event.preventDefault();
+  $("#target").scrollView();
 });
-
-if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0)
-{
-   document.getElementsByTagName("BODY")[0].className += " safari";
-}

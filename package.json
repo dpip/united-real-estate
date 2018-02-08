@@ -1,11 +1,19 @@
 {
-  "name": "united_real-estate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "yes",
+  "version": "yes",
+  "main": "home.js",
+  "repository": "git@github.com:dpip/united-real-estate.git",
+  "author": "Daniel Pipkin",
+  "license": "MIT",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npm-run-all --parallel watch:*",
+    "watch:css": "node-sass -w ./assets/css/index.scss ./assets/css/index.css",
+    "watch:browser-sync": "browser-sync start --server --files"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2"
+  }
 }

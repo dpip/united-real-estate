@@ -1,104 +1,14 @@
-@media only screen and (max-width: 880px) {
-    .home-body-wrapper {
-      flex-direction: column;
-    }
-    .body-wrapper-overlay {
-      display: none;
-    }
-    .c-50-one {
-      height: 20rem !important;
-      width: 100% !important;
-      background-color: $blue !important;
-      .TRB-wrap {
-        height: 100%;
-        flex-direction: row !important;
-        .TRB-logo {
-          width: 14vw !important;
-          height: 10vw !important;
-        }
-        .TRB-title {
-          margin-top: 0;
-          font-size: 5.5vw;
-        }
-        .RDC-wrap {
-          display: none !important;
-        }
-        .button-how {
-          display: none !important;
-        }
-      }
-    }
-    .c-50-two {
-      height: 80rem !important;
-      width: 100% !important;
-
-      .bio-info-grid-container {
-        color: $blue;
-      }
-      .bio-info-social-links {
-        div {
-          color: $blue;
-        }
-        div:hover {
-          color: $blue;
-        }
-      }
-      .bio-info-grid-wrapper {
-        box-sizing: border-box;
-        height: 95% !important;
-        padding-top: 5%;
-        font-weight: bold;
-      }
-      .bio-info-image {
-        height: 20em !important;
-        width: 13em !important;
-      }
-    }
-    .panel {
-      opacity: 0;
-    }
-    .panel-body-container {
-      display: none;
-    }
-    .firms-footer {
-      display: none !important;
-    }
-
+@media (max-width: 880px) {
 }
-
 
 body.safari {
-  .panel-body-container {
-    padding-top: 21rem;
-    padding-left: 1em;
+}
+
+@media (max-width: 667px) {
+  .tag-line {
+    flex-direction: column !important;
   }
 }
 
-@media only screen
-and (min-device-width : 370px)
-and (max-device-width : 667px) {
-
-
-  .bio-info-grid .bio-info-grid-container {
-    font-size: 5.2vw;
-
-  }
-  .c-50-two .bio-info-social-links div {
-    font-size: 12vw;
-  }
-
-}
-
-@media only screen and (max-device-width: 320px){
-    body {
-      min-width: 100%;
-      height: 100%;
-  }
-  .bio-info-grid .bio-info-grid-container {
-    font-size: 5.8vw;
-
-  }
-  .c-50-two .bio-info-social-links div {
-    font-size: 12vw;
-  }
+@media (max-width: 320px) {
 }
