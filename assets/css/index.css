@@ -198,11 +198,16 @@ a {
   .footer-two {
     left: 52.5vw; } }
 
+html,
+body {
+  overflow-x: hidden; }
+
 .home-wrap {
   max-height: 100%;
   max-width: 100%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow-y: hidden; }
 
 .home-top-wrapper {
   width: 100%;
@@ -322,7 +327,6 @@ a {
     font-size: 1.5rem;
     flex-grow: 1;
     text-align: center;
-    text-decoration: underline;
     text-shadow: 1px 1px white; }
   .RDC-wrap .fa {
     text-decoration: none;
@@ -349,7 +353,7 @@ a {
   width: 100%;
   display: flex;
   font-family: "Lato", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   justify-content: center;
   align-items: center;
   color: #ececec; }
@@ -384,9 +388,9 @@ a {
   .how-it-works-card .how-it-works-item {
     width: 90%;
     font-family: "Lato", sans-serif;
-    font-size: 1vw;
+    font-size: 1rem;
     color: rgba(0, 42, 61, 0.9);
-    line-height: 2.5rem; }
+    line-height: 1.5rem; }
   .how-it-works-card i {
     font-size: 4rem; }
   .how-it-works-card .fa {
@@ -423,7 +427,7 @@ a {
     justify-content: center;
     width: 100%;
     font-family: "Lato", sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     color: rgba(0, 0, 0, 0.22);
     padding-bottom: 5rem; }
 
@@ -503,22 +507,95 @@ a {
 
 .footer {
   width: 100%;
-  height: 12rem;
+  height: 8rem;
   background-color: rgba(0, 42, 61, 0.9);
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "Lato", sans-serif;
   justify-content: space-around;
   align-items: center; }
   .footer .fair-housing {
-    padding: 2.5rem;
+    padding: 2rem;
     background-image: url(../images/Equal-Housing-Opportunity-Logo.png);
     background-size: 100% 100%;
     background-repeat: no-repeat; }
   .footer .united-img {
-    padding: 2.5rem;
+    padding: 2rem;
     background-image: url(../images/united_grey.gif);
     background-size: 100% 100%;
     background-repeat: no-repeat; }
+
+@media (max-width: 900px) {
+  .TRB-title {
+    margin-top: 0rem;
+    width: 40%;
+    text-align: center; }
+  .home-top-wrapper {
+    height: 30rem; }
+  .home-top-wrapper .top-left-logo {
+    left: 10px;
+    width: 45px;
+    height: 40px; }
+  .RDC-wrap {
+    width: auto; }
+  .rdc {
+    margin: 5px; } }
+
+@media screen and (max-width: 667px) {
+  .TRB-title {
+    margin-top: 0rem;
+    width: 40%;
+    text-align: center; }
+  .home-top-wrapper {
+    height: 30rem; }
+  .home-top-wrapper .top-left-logo {
+    left: 10px;
+    width: 45px;
+    height: 40px; }
+  .RDC-wrap {
+    width: auto; }
+  .rdc {
+    margin: 5px; }
+  .tag-line {
+    padding: 2rem;
+    text-align: center; }
+  .tag-item {
+    width: 300px;
+    font-size: 2rem; }
+  .home-middle-wrapper {
+    flex-direction: column; }
+  .bio-wrapper {
+    width: 100% !important;
+    padding: 1rem !important; }
+  .bio-info-grid-wrapper {
+    margin-top: -1rem; }
+  .mobile-email {
+    font-size: 1.25rem !important; }
+  .mobile-number {
+    font-size: 1.25rem !important; }
+  .mobile-name {
+    font-size: 2rem !important; }
+  .hiw-wrapper {
+    text-align: center; }
+  .hiw-wrapper-sub h1 {
+    font-size: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 3rem; }
+  .hiw-wrapper-sub-card div {
+    flex-direction: column; }
+  .how-it-works-card {
+    height: 18rem;
+    width: 18rem; }
+  .how-it-works-card .how-it-works-item {
+    font-size: 2rem;
+    line-height: 2.5rem; }
+  .fa {
+    font-size: 3rem; }
+  .footer .fair-housing {
+    padding: 2rem; }
+  .footer .united-img {
+    padding: 2rem; }
+  .home-bottom-wrapper {
+    padding-top: 3rem; } }
